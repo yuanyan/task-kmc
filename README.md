@@ -34,7 +34,13 @@ Default: `'baz'`
 
 Dep file.
 
+#### options.packages
+Type: `object`
+
+KISSY packages config.
+
 ## Release History
+* 2014-11-11 0.1.2  Add `packages` option.
 * 2014-11-11 0.1.0  Initial release.
 
 ## License
