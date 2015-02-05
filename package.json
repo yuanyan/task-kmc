@@ -1,6 +1,6 @@
 {
   "name": "task-kmc",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "main": "lib/kmc.js",
   "description": "KISSY module compiler.",
   "homepage": "https://github.com/yuanyan/task-kmc",
@@ -25,7 +25,8 @@
     "execution": "^0.1.1",
     "record": "^0.2.0",
     "kmc": "^1.0.42",
-    "glob": "^4.3.5"
+    "glob": "^4.3.5",
+    "easyfile": "^0.1.0"
   },
   "scripts": {
     "test": "node test/kmc_test"
