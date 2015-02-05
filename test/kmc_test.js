@@ -10,6 +10,27 @@ function errorHandler(err){
 (new Kmc).run(
     [], // inputs
     {
+        combo: true,
+        src: __dirname + '/fixtures/mods/*.js',
+        base: __dirname + '/fixtures/',
+        dest: __dirname + '/expected/',
+        dep: __dirname + '/expected/mods-dep.js',
+        packages: {
+            mods: {
+                base: 'fixtures/mods',
+                ignorePackageNameInUri: true
+            }
+        }
+    }, // options
+    console // logger
+).then(function(inputs){
+
+    }).catch(errorHandler);
+
+
+(new Kmc).run(
+    [], // inputs
+    {
         name: 'foo/',
         src: __dirname + '/fixtures/foo.js',
         dest: __dirname + '/expected/foo.js'
@@ -17,18 +38,4 @@ function errorHandler(err){
     console // logger
 ).then(function(inputs){
 
-}).catch(errorHandler);
-
-(new Kmc).run(
-    [], // inputs
-    {
-        name: 'foo/',
-        combo: true,
-        src: __dirname + '/fixtures/mods/*.js',
-        dest: __dirname + '/expected/mods/',
-        dep: __dirname + '/expected/mods-dep.js'
-    }, // options
-    console // logger
-).then(function(inputs){
-
-    }).catch(errorHandler)
+    }).catch(errorHandler);
