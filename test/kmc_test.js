@@ -17,4 +17,19 @@ function errorHandler(err){
     console // logger
 ).then(function(inputs){
 
-}).catch(errorHandler)
+}).catch(errorHandler);
+
+(new Kmc).run(
+    [], // inputs
+    {
+        name: 'foo/',
+        combo: true,
+        map: true,
+        src: __dirname + '/fixtures/mods/*.js',
+        dest: __dirname + '/expected/mods/',
+        dep: __dirname + '/expected/mods-dep.js'
+    }, // options
+    console // logger
+).then(function(inputs){
+
+    }).catch(errorHandler)

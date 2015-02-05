@@ -32,16 +32,28 @@ Dest file.
 Type: `string`
 Default: `'baz'`
 
-Dep file.
+Modules dependence config file dest path.
 
 #### options.packages
 Type: `object`
 
 KISSY packages config.
 
+#### options.map
+Type: `boolean`
+
+Generate all combo mode modules dependence config in dependence config file.
+
+#### options.combo
+Type: `boolean`
+
+Online combo mode.
+
+
 ## Release History
+* 2015-02-02 0.1.3  Add more options.
 * 2014-11-11 0.1.2  Add `packages` option.
 * 2014-11-11 0.1.0  Initial release.
 
 ## License
-Copyright (c) 2014 Yuanyan Cao. Licensed under the MIT license.
+Copyright (c) 2014-2015 Yuanyan Cao. Licensed under the MIT license.

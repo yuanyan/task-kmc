@@ -24,7 +24,8 @@
   "dependencies": {
     "execution": "^0.1.1",
     "record": "^0.2.0",
-    "kmc": "^1.0.42"
+    "kmc": "^1.0.42",
+    "glob": "^4.3.5"
   },
   "scripts": {
     "test": "node test/kmc_test"
