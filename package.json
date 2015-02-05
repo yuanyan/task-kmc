@@ -1,6 +1,6 @@
 {
   "name": "task-kmc",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "main": "lib/kmc.js",
   "description": "KISSY module compiler.",
   "homepage": "https://github.com/yuanyan/task-kmc",

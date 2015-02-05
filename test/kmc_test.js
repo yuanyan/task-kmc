@@ -24,7 +24,6 @@ function errorHandler(err){
     {
         name: 'foo/',
         combo: true,
-        map: true,
         src: __dirname + '/fixtures/mods/*.js',
         dest: __dirname + '/expected/mods/',
         dep: __dirname + '/expected/mods-dep.js'
